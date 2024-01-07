@@ -1,20 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { Chat } from "./components/chat/chat";
 
-export default function App() {
+export default function app() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <SafeAreaView style={s.container}>
+        <Chat
+          name="Nusair"
+          message="First Message"
+          image="https://i.pravatar.cc/150?img=52"
+        />
+
+        <Chat
+          name="Rakees"
+          message="Third Message"
+          image="https://i.pravatar.cc/150?img=53"
+        />
+      </SafeAreaView>
+    </>
   );
 }
 
-const styles = StyleSheet.create({
+const s = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingLeft: 10,
+    paddingRight: 10,
+    backgroundColor: "grey",
   },
 });
