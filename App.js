@@ -7,8 +7,6 @@ export default function app() {
     <>
       <SafeAreaView style={s.container}>
         <Profile />
-        <Profile />
-        <Profile />
       </SafeAreaView>
     </>
   );
