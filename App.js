@@ -1,12 +1,20 @@
-import { StyleSheet, Text } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  Touchable,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Chat } from "./components/chat/chat";
 import { Profile } from "./components/Profile/profile";
+import { Button } from "./components/button/button";
 
 export default function app() {
   return (
     <>
       <SafeAreaView style={s.container}>
-        <Profile />
+        <Button />
       </SafeAreaView>
     </>
   );
